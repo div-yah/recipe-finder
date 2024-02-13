@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "private": "true",
+  "type": "module",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.17",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "jquery": "^3.7.1",
+    "nodemon": "^3.0.3",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.70.0",
+    "select2": "^4.1.0-rc.0"
+  },
+  "packageManager": "yarn@1.22.21"
+}

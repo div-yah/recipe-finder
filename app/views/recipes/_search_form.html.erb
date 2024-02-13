@@ -1,0 +1,12 @@
+<%= form_tag search_recipes_path do %>
+  <div class="card-body row">
+    <div class="col-md-8 offset-md-2">
+      <div class="row" data-controller="select2">
+        <%= select_tag :ingredient_ids, nil, class: "form-control search-select", id: "search-select", multiple: true %>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-center">
+    <%= submit_tag "Search Recipes", class: "btn btn-secondary", id: "search-submit"%>
+  </div>
+<% end %>

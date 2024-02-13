@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RecipeFinder</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application" %>
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <div class="container">
+        <%= link_to "Recipe Finder", root_path, class: "navbar-text" %>
+      </div>
+    </nav>
+    <br/><br/><br/>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

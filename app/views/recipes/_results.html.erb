@@ -1,0 +1,14 @@
+<% @recipes.each do |recipe| %>
+  <div class="card col-md-2 text-center" style="margin-left: 20px;">
+    <div class="card-body">
+      <div class="row">
+        <a href="<%= recipe_path(id: recipe.id) %>">
+          <img src="<%=recipe.image_url%>" style="width: 100%;">
+        </a>
+      </div>
+      <div class="row">
+        <%= link_to recipe.title,recipe_path(recipe.id) %>
+      </div>
+    </div>
+  </div>
+<% end %>

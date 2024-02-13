@@ -1,0 +1,18 @@
+<div class="row col-md-8 offset-md-2">
+  <div class="card">
+    <%= render 'search_form' %>
+  </div>
+</div>
+
+<br/><br/><br/>
+
+<% if defined?(@recipes) %>
+  <% if @recipes.any? %>
+    <div class="row offset-md-1">
+      <%= render 'results', recipes: @recipes %>
+    </div>
+  <% else %>
+    <div class="row text-center"><h4>No Results</h4></div>
+  <% end %>    
+<% end %>
+
